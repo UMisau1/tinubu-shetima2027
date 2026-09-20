@@ -1255,6 +1255,98 @@ section {
 
 }
 
+/* =========================================
+   FOOTER
+========================================= */
+
+.site-footer {
+  background: #063d29;
+  color: white;
+  padding: 70px 20px 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  gap: 60px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  display: inline-block;
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+  text-decoration: none;
+  letter-spacing: 1px;
+  margin-bottom: 18px;
+}
+
+.footer-logo span {
+  color: #ffd700;
+}
+
+.footer-brand p {
+  max-width: 400px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.7;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-column h3 {
+  color: #ffd700;
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.footer-column a {
+  color: rgba(255,255,255,0.78);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.25s ease;
+}
+
+.footer-column a:hover {
+  color: #ffd700;
+}
+
+.footer-bottom {
+  max-width: 1100px;
+  margin: 55px auto 0;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255,255,255,0.18);
+
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: rgba(255,255,255,0.6);
+  font-size: 12px;
+}
+
+
+@media (max-width: 700px) {
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+}
+
   </style>
 </head>
 
@@ -1361,7 +1453,7 @@ section {
   </div>
 
   <div class="hero-scroll">
-    
+   
     <div class="scroll-line"></div>
   </div>
 
@@ -1442,9 +1534,9 @@ section {
       administration.
     </p>
 
-    <a href="#" class="read-more">
-      View details →
-    </a>
+   <a href="#sources" class="read-more">
+  View details →
+   </a>
 
   </article>
 
@@ -1470,8 +1562,8 @@ section {
       petroleum policy and related government programmes.
     </p>
 
-    <a href="#" class="read-more">
-      View details →
+    <a href="#sources" class="read-more">
+  View details →
     </a>
 
   </article>
@@ -1498,8 +1590,8 @@ section {
       transport and other infrastructure projects.
     </p>
 
-    <a href="#" class="read-more">
-      View details →
+    <a href="#sources" class="read-more">
+  View details →
     </a>
 
   </article>
@@ -1526,8 +1618,8 @@ section {
       skills development and human-capital programmes.
     </p>
 
-    <a href="#" class="read-more">
-      View details →
+    <a href="#sources" class="read-more">
+  View details →
     </a>
 
   </article>
@@ -1554,8 +1646,8 @@ section {
       facilities and access to medical services.
     </p>
 
-    <a href="#" class="read-more">
-      View details →
+    <a href="#sources" class="read-more">
+  View details →
     </a>
 
   </article>
@@ -1582,8 +1674,8 @@ section {
       defence programmes and measures addressing security.
     </p>
 
-    <a href="#" class="read-more">
-      View details →
+    <a href="#sources" class="read-more">
+  View details →
     </a>
 
   </article>
@@ -1646,8 +1738,8 @@ section {
         productivity, employment and economic growth.
       </p>
 
-      <a href="#" class="agenda-link">
-        Read policy details →
+      <a href="#sources" class="agenda-link">
+  Read policy details →
       </a>
 
     </div>
@@ -1678,8 +1770,8 @@ section {
         food supply, farmer support and food security.
       </p>
 
-      <a href="#" class="agenda-link">
-        Read policy details →
+      <a href="#sources" class="agenda-link">
+  Read policy details →
       </a>
 
     </div>
@@ -1710,10 +1802,9 @@ section {
         electricity and other public infrastructure.
       </p>
 
-      <a href="#" class="agenda-link">
-        Read policy details →
+      <a href="#sources" class="agenda-link">
+  Read policy details →
       </a>
-
     </div>
 
   </div>
@@ -1742,8 +1833,8 @@ section {
         skills development and human-capital programmes.
       </p>
 
-      <a href="#" class="agenda-link">
-        Read policy details →
+      <a href="#sources" class="agenda-link">
+  Read policy details →
       </a>
 
     </div>
@@ -1774,8 +1865,8 @@ section {
         community protection and national security programmes.
       </p>
 
-      <a href="#" class="agenda-link">
-        Read policy details →
+      <a href="#sources" class="agenda-link">
+  Read policy details →
       </a>
 
     </div>
@@ -1806,8 +1897,8 @@ section {
         investment, enterprise development and economic opportunity.
       </p>
 
-      <a href="#" class="agenda-link">
-        Read policy details →
+      <a href="#sources" class="agenda-link">
+  Read policy details →
       </a>
 
     </div>
@@ -1874,8 +1965,8 @@ section {
         presidential election and inauguration.
       </p>
 
-      <a href="#" class="timeline-link">
-        Official source →
+      <a href="#sources" class="timeline-link">
+  Official source →
       </a>
 
     </div>
@@ -1906,8 +1997,8 @@ section {
         the administration's first year in office.
       </p>
 
-      <a href="#" class="timeline-link">
-        Official source →
+      <a href="#sources" class="timeline-link">
+  Official source →
       </a>
 
     </div>
@@ -1938,8 +2029,8 @@ section {
         electricity and petroleum sectors.
       </p>
 
-      <a href="#" class="timeline-link">
-        Official source →
+      <a href="#sources" class="timeline-link">
+  Official source →
       </a>
 
     </div>
@@ -1970,8 +2061,8 @@ section {
         progressed across different parts of the country.
       </p>
 
-      <a href="#" class="timeline-link">
-        Official source →
+      <a href="#sources" class="timeline-link">
+  Official source →
       </a>
 
     </div>
@@ -2002,8 +2093,8 @@ section {
         across economic and social sectors.
       </p>
 
-      <a href="#" class="timeline-link">
-        Official source →
+      <a href="#sources" class="timeline-link">
+  Official source →
       </a>
 
     </div>
@@ -2019,7 +2110,7 @@ section {
 
 
 <!-- =========================
-     DATA / TRANSPARENCY
+     SOURCES
 ========================= -->
 
 <section class="data-section" id="sources">
@@ -2029,16 +2120,17 @@ section {
     <div class="section-title">
 
       <span class="eyebrow">
-        Evidence & Sources
+        OFFICIAL SOURCES
       </span>
 
       <h2>
-        Facts, Figures & Sources
+        Documents & Government Sources
       </h2>
 
       <p>
-        Every statistic displayed on this website should be linked
-        to its original government, institutional or independent source.
+        Access official government information, public documents,
+        policy materials and institutional sources related to
+        the Tinubu–Shettima administration.
       </p>
 
     </div>
@@ -2046,36 +2138,157 @@ section {
 
     <div class="source-grid">
 
-      <div class="source-card">
-        <h3>Economic Data</h3>
-        <p>
-          GDP, inflation, exchange rate, investment and employment data.
-        </p>
-        <a href="#">View source</a>
-      </div>
 
-      <div class="source-card">
-        <h3>Budget & Spending</h3>
-        <p>
-          Federal budget allocations, implementation and public expenditure.
-        </p>
-        <a href="#">View source</a>
-      </div>
+      <!-- PRESIDENCY -->
 
-      <div class="source-card">
-        <h3>Project Data</h3>
+      <article class="source-card">
+
+        <h3>
+          The State House
+        </h3>
+
         <p>
-          Infrastructure and development projects with locations and status.
+          Official information, presidential statements,
+          speeches, appointments and announcements from the
+          Presidency.
         </p>
-        <a href="#">View source</a>
-      </div>
+
+        <a
+          href="https://statehouse.gov.ng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit official source →
+        </a>
+
+      </article>
+
+
+      <!-- FEDERAL GOVERNMENT -->
+
+      <article class="source-card">
+
+        <h3>
+          Federal Government of Nigeria
+        </h3>
+
+        <p>
+          Government information, ministries, departments,
+          agencies and official federal programmes.
+        </p>
+
+        <a
+          href="https://www.gov.ng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit official source →
+        </a>
+
+      </article>
+
+
+      <!-- BUDGET OFFICE -->
+
+      <article class="source-card">
+
+        <h3>
+          Budget Office of the Federation
+        </h3>
+
+        <p>
+          Official budget documents, fiscal information and
+          federal budget resources.
+        </p>
+
+        <a
+          href="https://budgetoffice.gov.ng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit official source →
+        </a>
+
+      </article>
+
+
+      <!-- NATIONAL ASSEMBLY -->
+
+      <article class="source-card">
+
+        <h3>
+          National Assembly
+        </h3>
+
+        <p>
+          Legislative information, bills, Acts and proceedings
+          of Nigeria's National Assembly.
+        </p>
+
+        <a
+          href="https://nass.gov.ng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit official source →
+        </a>
+
+      </article>
+
+
+      <!-- CBN -->
+
+      <article class="source-card">
+
+        <h3>
+          Central Bank of Nigeria
+        </h3>
+
+        <p>
+          Official monetary, financial and banking information
+          published by the Central Bank of Nigeria.
+        </p>
+
+        <a
+          href="https://www.cbn.gov.ng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit official source →
+        </a>
+
+      </article>
+
+
+      <!-- NBS -->
+
+      <article class="source-card">
+
+        <h3>
+          National Bureau of Statistics
+        </h3>
+
+        <p>
+          Official statistical data and publications on
+          Nigeria's economy, population and society.
+        </p>
+
+        <a
+          href="https://www.nigerianstat.gov.ng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visit official source →
+        </a>
+
+      </article>
+
 
     </div>
 
   </div>
 
 </section>
-```
 
   
   <!-- VISION -->
@@ -2143,67 +2356,124 @@ section {
   </section>
 
 
-  <!-- NEWS -->
-  <section id="news">
+  <!-- =========================
+     NEWS & UPDATES
+========================= -->
 
-    <div class="container">
+<section class="data-section" id="news">
 
-      <div class="section-title">
-        <h2>Latest News</h2>
-        <p>Campaign news and updates</p>
-      </div>
+  <div class="container">
 
-      <div class="news-grid">
+    <div class="section-title">
 
-        <div class="news-card">
+      <span class="eyebrow">
+        NEWS & UPDATES
+      </span>
 
-          <img src="images/news1.jpg" alt="Campaign News">
+      <h2>
+        Latest Government Updates
+      </h2>
 
-          <div class="news-content">
-            <h3>Campaign Update</h3>
-
-            <p>
-              Add campaign news and announcements here.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div class="news-card">
-
-          <img src="images/news2.jpg" alt="Campaign Event">
-
-          <div class="news-content">
-            <h3>Campaign Events</h3>
-
-            <p>
-              Add information about upcoming campaign events here.
-            </p>
-          </div>
-
-        </div>
-
-
-        <div class="news-card">
-
-          <img src="images/news3.jpg" alt="Latest News">
-
-          <div class="news-content">
-            <h3>Latest Updates</h3>
-
-            <p>
-              Add the latest campaign updates here.
-            </p>
-          </div>
-
-        </div>
-
-      </div>
+      <p>
+        Official announcements, policy updates and
+        documented developments from government institutions.
+      </p>
 
     </div>
 
-  </section>
+
+    <div class="source-grid">
+
+
+      <!-- UPDATE 01 -->
+
+      <article class="source-card">
+
+        <span class="card-label">
+          PRESIDENCY
+        </span>
+
+        <h3>
+          Presidential Statements & Announcements
+        </h3>
+
+        <p>
+          Follow official statements, speeches, announcements
+          and other public information released by the Presidency.
+        </p>
+
+        <a
+          href="https://statehouse.gov.ng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View official updates →
+        </a>
+
+      </article>
+
+
+      <!-- UPDATE 02 -->
+
+      <article class="source-card">
+
+        <span class="card-label">
+          POLICY
+        </span>
+
+        <h3>
+          Policy & Programme Updates
+        </h3>
+
+        <p>
+          Follow documented updates on government policies,
+          programmes and implementation activities.
+        </p>
+
+        <a
+          href="https://www.gov.ng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View government updates →
+        </a>
+
+      </article>
+
+
+      <!-- UPDATE 03 -->
+
+      <article class="source-card">
+
+        <span class="card-label">
+          ECONOMY
+        </span>
+
+        <h3>
+          Economic & Fiscal Updates
+        </h3>
+
+        <p>
+          Access official information on economic policy,
+          public finance, budgets and related developments.
+        </p>
+
+        <a
+          href="https://budgetoffice.gov.ng/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          View official information →
+        </a>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
 
 
   <!-- VOLUNTEER -->
@@ -2329,45 +2599,157 @@ section {
 
   /* ACTIVE NAVIGATION */
 
-  window.addEventListener("scroll", function () {
+function updateActiveNav() {
 
-    const sections =
-      document.querySelectorAll("section[id]");
+  const sections =
+    document.querySelectorAll("section[id]");
 
-    let current = "";
+  let current = "";
 
-    sections.forEach(function (section) {
+  sections.forEach(function (section) {
 
-      const sectionTop =
-        section.offsetTop - 120;
+    const sectionTop =
+      section.offsetTop - 120;
 
-      if (window.scrollY >= sectionTop) {
-        current = section.getAttribute("id");
-      }
-
-    });
-
-
-    navLinks.forEach(function (link) {
-
-      link.classList.remove("active");
-
-      if (
-        link.getAttribute("href") ===
-        "#" + current
-      ) {
-        link.classList.add("active");
-      }
-
-    });
+    if (window.scrollY >= sectionTop) {
+      current = section.getAttribute("id");
+    }
 
   });
 
+
+  navLinks.forEach(function (link) {
+
+    link.classList.remove("active");
+
+    if (
+      link.getAttribute("href") ===
+      "#" + current
+    ) {
+      link.classList.add("active");
+    }
+
+  });
+
+}
+
+
+/* UPDATE WHILE SCROLLING */
+
+window.addEventListener(
+  "scroll",
+  updateActiveNav
+);
+
+
+/* UPDATE WHEN PAGE OPENS */
+
+window.addEventListener(
+  "load",
+  updateActiveNav
+);
+    
 </script>
     
 
   </script>
 
+  <!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="site-footer">
+
+  <div class="container">
+
+    <div class="footer-grid">
+
+
+      <!-- BRAND -->
+
+      <div class="footer-brand">
+
+        <a href="#home" class="footer-logo">
+          TINUBU <span>•</span> SHETTIMA
+        </a>
+
+        <p>
+          An informational portal covering documented
+          government policies, programmes, actions and
+          stated priorities.
+        </p>
+
+      </div>
+
+
+      <!-- QUICK LINKS -->
+
+      <div class="footer-column">
+
+        <h3>
+          Quick Links
+        </h3>
+
+        <a href="#home">
+          Home
+        </a>
+
+        <a href="#record">
+          The Record
+        </a>
+
+        <a href="#agenda">
+          Policy Agenda
+        </a>
+
+        <a href="#timeline-section">
+          Timeline
+        </a>
+
+      </div>
+
+
+      <!-- INFORMATION -->
+
+      <div class="footer-column">
+
+        <h3>
+          Information
+        </h3>
+
+        <a href="#sources">
+          Sources
+        </a>
+
+        <a href="#news">
+          News & Updates
+        </a>
+
+        <a href="#home">
+          About This Portal
+        </a>
+
+      </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <p>
+        © 2026 Tinubu–Shettima Information Portal.
+      </p>
+
+      <p>
+        Information should be verified against official sources.
+      </p>
+
+    </div>
+
+  </div>
+
+</footer>
 </body>
 </html>
 ```
