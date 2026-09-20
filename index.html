@@ -1,0 +1,2373 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Tinubu Shettima 2027 | Renewed Hope</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    header {
+      background: #008751;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 15px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .logo span {
+      color: #ffd700;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
+    .menu-btn {
+      display: none;
+      font-size: 28px;
+      cursor: pointer;
+    }
+
+    /* HERO */
+   .hero {
+  position: relative;
+
+  min-height: 88vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  color: white;
+
+  padding: 100px 20px;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.60),
+      rgba(0, 0, 0, 0.68)
+    ),
+    url("images/hero.jpg");
+
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+}
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero h1 {
+      font-size: 55px;
+      margin-bottom: 15px;
+    }
+
+    .hero h2 {
+      font-size: 30px;
+      color: #ffd700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 14px 28px;
+      background: #ffd700;
+      color: #111;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      margin: 5px;
+    }
+
+    .btn:hover {
+      background: white;
+    }
+
+    /* GENERAL */
+    section {
+      padding: 80px 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title h2 {
+      font-size: 38px;
+      color: #008751;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    /* ABOUT */
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .about h3 {
+      font-size: 30px;
+      margin-bottom: 15px;
+      color: #008751;
+    }
+
+    /* VISION */
+    .vision {
+      background: #f5f5f5;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px rgba(0,0,0,.08);
+      text-align: center;
+    }
+
+    .card h3 {
+      color: #008751;
+      margin-bottom: 10px;
+    }
+
+    /* CAMPAIGN */
+    .campaign {
+      background: #008751;
+      color: white;
+      text-align: center;
+    }
+
+    .campaign h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+
+    /* NEWS */
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+    }
+
+    .news-card {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      background: white;
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 20px;
+    }
+
+    .news-content h3 {
+      margin-bottom: 10px;
+      color: #008751;
+    }
+
+    /* VOLUNTEER */
+    .volunteer {
+      background: #f5f5f5;
+    }
+
+    form {
+      max-width: 650px;
+      margin: auto;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    textarea {
+      min-height: 130px;
+    }
+
+    button {
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #111;
+      color: white;
+      text-align: center;
+      padding: 35px 20px;
+    }
+
+    footer a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+
+      .menu-btn {
+        display: block;
+      }
+
+      nav ul {
+        display: none;
+        position: absolute;
+        top: 65px;
+        left: 0;
+        width: 100%;
+        background: #008751;
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .hero h1 {
+        font-size: 38px;
+      }
+
+      .hero h2 {
+        font-size: 23px;
+      }
+
+      .about,
+      .cards,
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+   /* =========================================
+   NEW CAMPAIGN INFORMATION SECTIONS
+========================================= */
+
+.eyebrow {
+  display: inline-block;
+  color: #008751;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero .eyebrow {
+  color: #ffd700;
+}
+
+.hero-content span {
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #ffd700;
+  display: inline;
+}
+
+.hero-subtitle {
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.btn-primary {
+  background: #ffd700;
+  color: #111;
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: #111;
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.intro {
+  background: white;
+  padding: 75px 20px;
+}
+
+.intro .section-title {
+  max-width: 800px;
+  margin: auto;
+}
+
+.intro .section-title h2 {
+  margin-bottom: 15px;
+}
+
+
+/* =========================================
+   RECORD SECTION
+========================================= */
+
+.record {
+  background: #f7f9f8;
+  padding: 90px 20px;
+}
+
+.record-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.record-card {
+  background: white;
+  padding: 35px 30px;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  transition: all .3s ease;
+}
+
+.record-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(0,0,0,.10);
+}
+
+.card-icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #008751;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.card-label {
+  display: block;
+  color: #008751;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  margin-bottom: 8px;
+}
+
+.record-card h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+.record-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.read-more {
+  color: #008751;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  color: #005c37;
+}
+
+
+/* =========================================
+   AGENDA
+========================================= */
+
+.agenda {
+  background: #008751;
+  color: white;
+  padding: 90px 20px;
+}
+
+.section-title.light h2,
+.section-title.light p {
+  color: white;
+}
+
+.agenda .eyebrow {
+  color: #ffd700;
+}
+
+.agenda-list {
+  max-width: 900px;
+  margin: 50px auto 0;
+}
+
+.agenda-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 25px;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}
+
+.agenda-number {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ffd700;
+}
+
+.agenda-item h3 {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.agenda-item p {
+  color: rgba(255,255,255,.85);
+}
+
+
+/* =========================================
+   TIMELINE
+========================================= */
+
+.timeline-section {
+  background: white;
+  padding: 90px 20px;
+}
+
+.timeline {
+  max-width: 900px;
+  margin: 50px auto 0;
+  position: relative;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 95px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #008751;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 30px;
+  position: relative;
+  margin-bottom: 45px;
+}
+
+.timeline-date {
+  font-size: 22px;
+  font-weight: 800;
+  color: #008751;
+  text-align: right;
+}
+
+.timeline-content {
+  background: #f7f9f8;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+.timeline-content h3 {
+  color: #008751;
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.timeline-content a {
+  color: #008751;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* =========================================
+   DATA / SOURCES
+========================================= */
+
+.data-section {
+  background: #f5f5f5;
+  padding: 90px 20px;
+}
+
+.source-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.source-card {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.source-card h3 {
+  color: #008751;
+  margin-bottom: 12px;
+}
+
+.source-card p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.source-card a {
+  color: #008751;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .record-grid,
+  .source-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .hero h1 {
+    font-size: 38px;
+  }
+
+  .hero-subtitle {
+    font-size: 18px;
+  }
+
+  .record-grid,
+  .source-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .agenda-item {
+    grid-template-columns: 55px 1fr;
+    gap: 15px;
+  }
+
+  .agenda-number {
+    font-size: 22px;
+  }
+
+  .timeline::before {
+    display: none;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .timeline-date {
+    text-align: left;
+  }
+
+} 
+/* =========================================
+   PROFESSIONAL NAVIGATION
+========================================= */
+
+.site-header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  z-index: 1000;
+
+  background: rgba(0, 70, 42, 0.94);
+
+  backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid rgba(255,255,255,0.12);
+
+  transition: all 0.3s ease;
+}
+
+
+/* NAV CONTAINER */
+
+.nav-container {
+  max-width: 1200px;
+
+  height: 76px;
+
+  margin: 0 auto;
+
+  padding: 0 25px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+
+/* LOGO */
+
+.site-logo {
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  text-decoration: none;
+
+  color: white;
+
+  font-size: 21px;
+
+  font-weight: 800;
+
+  letter-spacing: 0.5px;
+}
+
+.logo-main {
+  color: white;
+}
+
+.logo-dot {
+  color: #ffd700;
+
+  font-size: 24px;
+}
+
+.logo-sub {
+  color: white;
+}
+
+
+/* NAVIGATION */
+
+.main-nav {
+  display: flex;
+
+  align-items: center;
+
+  gap: 5px;
+}
+
+
+.nav-link {
+  position: relative;
+
+  padding: 10px 15px;
+
+  color: rgba(255,255,255,0.88);
+
+  text-decoration: none;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  transition: color 0.25s ease;
+}
+
+
+/* HOVER */
+
+.nav-link:hover {
+  color: #ffd700;
+}
+
+
+/* ACTIVE LINK */
+
+.nav-link.active {
+  color: #ffd700;
+}
+
+
+/* ACTIVE UNDERLINE */
+
+.nav-link.active::after {
+  content: "";
+
+  position: absolute;
+
+  left: 15px;
+  right: 15px;
+
+  bottom: 2px;
+
+  height: 2px;
+
+  background: #ffd700;
+
+  border-radius: 10px;
+}
+
+
+/* =========================================
+   MOBILE MENU BUTTON
+========================================= */
+
+.menu-toggle {
+  display: none;
+
+  width: 44px;
+  height: 44px;
+
+  border: none;
+
+  background: transparent;
+
+  cursor: pointer;
+
+  padding: 8px;
+}
+
+
+.menu-toggle span {
+  display: block;
+
+  width: 27px;
+
+  height: 2px;
+
+  background: white;
+
+  margin: 5px auto;
+
+  transition: all 0.3s ease;
+}
+
+
+/* =========================================
+   MOBILE NAVIGATION
+========================================= */
+
+@media (max-width: 850px) {
+
+  .nav-container {
+    height: 68px;
+
+    padding: 0 18px;
+  }
+
+
+  .site-logo {
+    font-size: 18px;
+  }
+
+
+  .menu-toggle {
+    display: block;
+
+    position: relative;
+
+    z-index: 1002;
+  }
+
+
+  .main-nav {
+    position: fixed;
+
+    top: 68px;
+
+    left: 0;
+
+    right: 0;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 0;
+
+    background: #006b40;
+
+    padding: 15px 20px 25px;
+
+    transform: translateY(-120%);
+
+    opacity: 0;
+
+    visibility: hidden;
+
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease,
+      visibility 0.3s ease;
+
+    box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+  }
+
+
+  .main-nav.open {
+    transform: translateY(0);
+
+    opacity: 1;
+
+    visibility: visible;
+  }
+
+
+  .nav-link {
+    padding: 15px 10px;
+
+    border-bottom: 1px solid rgba(255,255,255,0.10);
+
+    font-size: 15px;
+  }
+
+
+  .nav-link.active::after {
+    display: none;
+  }
+
+
+  /* HAMBURGER ANIMATION */
+
+  .menu-toggle.open span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+
+
+  .menu-toggle.open span:nth-child(2) {
+    opacity: 0;
+  }
+
+
+  .menu-toggle.open span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
+
+}
+
+
+/* =========================================
+   PAGE OFFSET
+========================================= */
+
+body {
+  padding-top: 0;
+}
+
+
+/* Make anchor sections stop below fixed header */
+
+section {
+  scroll-margin-top: 80px;
+}
+/* =========================================
+   POLICY AGENDA
+========================================= */
+
+.agenda-list {
+  max-width: 950px;
+  margin: 50px auto 0;
+}
+
+.agenda-item {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 30px;
+
+  padding: 32px 0;
+
+  border-bottom: 1px solid rgba(255,255,255,0.22);
+}
+
+.agenda-item:last-child {
+  border-bottom: none;
+}
+
+.agenda-number {
+  font-size: 30px;
+  font-weight: 800;
+  color: #ffd700;
+}
+
+.agenda-content {
+  padding-bottom: 5px;
+}
+
+.agenda-label {
+  display: inline-block;
+
+  color: #ffd700;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  letter-spacing: 1.8px;
+
+  margin-bottom: 8px;
+}
+
+.agenda-content h3 {
+  font-size: 25px;
+
+  color: white;
+
+  margin-bottom: 10px;
+}
+
+.agenda-content p {
+  max-width: 720px;
+
+  color: rgba(255,255,255,0.82);
+
+  line-height: 1.7;
+
+  margin-bottom: 14px;
+}
+
+.agenda-link {
+  display: inline-block;
+
+  color: white;
+
+  font-size: 14px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  border-bottom: 1px solid #ffd700;
+
+  padding-bottom: 3px;
+
+  transition: all 0.25s ease;
+}
+
+.agenda-link:hover {
+  color: #ffd700;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+  .agenda-list {
+    margin-top: 35px;
+  }
+
+  .agenda-item {
+    grid-template-columns: 48px 1fr;
+    gap: 15px;
+
+    padding: 25px 0;
+  }
+
+  .agenda-number {
+    font-size: 22px;
+  }
+
+  .agenda-content h3 {
+    font-size: 21px;
+  }
+
+}
+/* =========================================
+   GOVERNMENT TIMELINE
+========================================= */
+
+.timeline-section {
+  background: #ffffff;
+  padding: 90px 20px;
+}
+
+.timeline {
+  max-width: 950px;
+  margin: 55px auto 0;
+  position: relative;
+}
+
+/* Vertical line */
+
+.timeline::before {
+  content: "";
+
+  position: absolute;
+
+  left: 105px;
+  top: 0;
+  bottom: 0;
+
+  width: 2px;
+
+  background: #008751;
+}
+
+.timeline-item {
+  display: grid;
+
+  grid-template-columns: 130px 1fr;
+
+  gap: 35px;
+
+  position: relative;
+
+  margin-bottom: 45px;
+}
+
+.timeline-date {
+  text-align: right;
+
+  color: #008751;
+
+  font-size: 22px;
+
+  font-weight: 800;
+
+  padding-top: 8px;
+}
+
+/* Timeline card */
+
+.timeline-content {
+  position: relative;
+
+  background: #f7f9f8;
+
+  border: 1px solid #e5e5e5;
+
+  border-radius: 12px;
+
+  padding: 28px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+/* Dot on timeline */
+
+.timeline-content::before {
+  content: "";
+
+  position: absolute;
+
+  left: -43px;
+
+  top: 25px;
+
+  width: 12px;
+  height: 12px;
+
+  background: #ffd700;
+
+  border: 3px solid #008751;
+
+  border-radius: 50%;
+}
+
+.timeline-tag {
+  display: inline-block;
+
+  color: #008751;
+
+  font-size: 11px;
+
+  font-weight: 800;
+
+  letter-spacing: 1.5px;
+
+  margin-bottom: 9px;
+}
+
+.timeline-content h3 {
+  color: #222;
+
+  font-size: 23px;
+
+  margin-bottom: 10px;
+}
+
+.timeline-content p {
+  color: #666;
+
+  line-height: 1.7;
+
+  margin-bottom: 15px;
+}
+
+.timeline-link {
+  color: #008751;
+
+  font-weight: 700;
+
+  text-decoration: none;
+}
+
+.timeline-link:hover {
+  color: #005c37;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 700px) {
+
+  .timeline {
+    margin-top: 40px;
+  }
+
+  .timeline::before {
+    left: 8px;
+  }
+
+  .timeline-item {
+    display: block;
+
+    margin-left: 30px;
+
+    margin-bottom: 30px;
+  }
+
+  .timeline-date {
+    text-align: left;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+  }
+
+  .timeline-content::before {
+    left: -29px;
+    top: 24px;
+  }
+
+  .timeline-content {
+    padding: 22px;
+  }
+
+  .timeline-content h3 {
+    font-size: 20px;
+  }
+
+}
+
+  </style>
+</head>
+
+<body>
+
+ <!-- HEADER -->
+<header class="site-header">
+
+  <div class="nav-container">
+
+    <!-- LOGO -->
+    <a href="#home" class="site-logo">
+      <span class="logo-main">TINUBU</span>
+      <span class="logo-dot">•</span>
+      <span class="logo-sub">SHETTIMA</span>
+    </a>
+
+
+    <!-- MOBILE MENU BUTTON -->
+    <button
+      class="menu-toggle"
+      id="menuToggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+    >
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+
+    <!-- NAVIGATION -->
+    <nav class="main-nav" id="mainNav">
+
+      <a href="#home" class="nav-link active">
+        Home
+      </a>
+
+      <a href="#record" class="nav-link">
+        The Record
+      </a>
+
+      <a href="#agenda" class="nav-link">
+        Policy Agenda
+      </a>
+
+      <a href="#timeline-section" class="nav-link">
+        Timeline
+      </a>
+
+      <a href="#sources" class="nav-link">
+        Sources
+      </a>
+
+      <a href="#news" class="nav-link">
+        News
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+ <!-- HERO -->
+<section class="hero" id="home">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <span class="hero-tag">
+      PRESIDENTIAL INFORMATION PORTAL
+    </span>
+
+    <h1>
+      Bola Ahmed Tinubu
+    </h1>
+
+    <div class="hero-divider"></div>
+
+    <h2>
+      & Kashim Shettima
+    </h2>
+
+    <p class="hero-description">
+      Policies, programmes, government actions,
+      achievements and stated priorities of the
+      Tinubu–Shettima administration.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#record" class="btn btn-primary">
+        Explore the Record
+      </a>
+
+      <a href="#agenda" class="btn btn-outline">
+        View Policy Agenda
+      </a>
+
+    </div>
+
+  </div>
+
+  <div class="hero-scroll">
+    <span>Scroll to explore</span>
+    <div class="scroll-line"></div>
+  </div>
+
+</section>
+
+<!-- =========================
+     INTRODUCTION
+========================= -->
+
+<section class="intro">
+  <div class="container">
+
+    <div class="section-title">
+      <span class="eyebrow">Presidential Administration</span>
+
+      <h2>
+        Tinubu–Shettima Administration
+      </h2>
+
+      <p>
+        A factual overview of policies, programmes, reported achievements,
+        ongoing initiatives and stated priorities of the administration.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- =========================
+     RECORD / ACHIEVEMENTS
+========================= -->
+
+<section class="record" id="record">
+
+  <div class="container">
+
+    <div class="section-title">
+
+  <span class="eyebrow">
+    The Record
+  </span>
+
+  <h2>
+    Key Areas of Government Action
+  </h2>
+
+  <p>
+    Explore the administration's major policy areas,
+    programmes and documented government actions.
+  </p>
+
+</div>
+
+
+<div class="record-grid">
+
+
+  <!-- ECONOMY -->
+
+  <article class="record-card">
+
+    <div class="card-icon">
+      ₦
+    </div>
+
+    <span class="card-label">
+      ECONOMY
+    </span>
+
+    <h3>
+      Economic Reforms
+    </h3>
+
+    <p>
+      Information on economic reforms, investment policy,
+      business activity and measures introduced by the
+      administration.
+    </p>
+
+    <a href="#" class="read-more">
+      View details →
+    </a>
+
+  </article>
+
+
+  <!-- ENERGY -->
+
+  <article class="record-card">
+
+    <div class="card-icon">
+      ⚡
+    </div>
+
+    <span class="card-label">
+      ENERGY
+    </span>
+
+    <h3>
+      Energy & Power
+    </h3>
+
+    <p>
+      Information on electricity, energy-sector reforms,
+      petroleum policy and related government programmes.
+    </p>
+
+    <a href="#" class="read-more">
+      View details →
+    </a>
+
+  </article>
+
+
+  <!-- INFRASTRUCTURE -->
+
+  <article class="record-card">
+
+    <div class="card-icon">
+      🏗
+    </div>
+
+    <span class="card-label">
+      INFRASTRUCTURE
+    </span>
+
+    <h3>
+      Infrastructure
+    </h3>
+
+    <p>
+      Documented information about major roads, bridges,
+      transport and other infrastructure projects.
+    </p>
+
+    <a href="#" class="read-more">
+      View details →
+    </a>
+
+  </article>
+
+
+  <!-- EDUCATION -->
+
+  <article class="record-card">
+
+    <div class="card-icon">
+      🎓
+    </div>
+
+    <span class="card-label">
+      EDUCATION
+    </span>
+
+    <h3>
+      Education & Skills
+    </h3>
+
+    <p>
+      Information on education policies, student support,
+      skills development and human-capital programmes.
+    </p>
+
+    <a href="#" class="read-more">
+      View details →
+    </a>
+
+  </article>
+
+
+  <!-- HEALTH -->
+
+  <article class="record-card">
+
+    <div class="card-icon">
+      +
+    </div>
+
+    <span class="card-label">
+      HEALTH
+    </span>
+
+    <h3>
+      Healthcare
+    </h3>
+
+    <p>
+      Information on healthcare programmes, health financing,
+      facilities and access to medical services.
+    </p>
+
+    <a href="#" class="read-more">
+      View details →
+    </a>
+
+  </article>
+
+
+  <!-- SECURITY -->
+
+  <article class="record-card">
+
+    <div class="card-icon">
+      🛡
+    </div>
+
+    <span class="card-label">
+      SECURITY
+    </span>
+
+    <h3>
+      National Security
+    </h3>
+
+    <p>
+      Documented information on national security policies,
+      defence programmes and measures addressing security.
+    </p>
+
+    <a href="#" class="read-more">
+      View details →
+    </a>
+
+  </article>
+
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     POLICY / FUTURE AGENDA
+========================= -->
+
+<section class="agenda" id="agenda">
+
+  <div class="container">
+
+    <div class="section-title light">
+
+  <span class="eyebrow">
+    FUTURE PRIORITIES
+  </span>
+
+  <h2>
+    Policy Agenda
+  </h2>
+
+  <p>
+    Explore stated priorities, proposed programmes and policy areas
+    for the next phase of government.
+  </p>
+
+</div>
+
+
+<div class="agenda-list">
+
+
+  <!-- 01 -->
+
+  <div class="agenda-item">
+
+    <span class="agenda-number">
+      01
+    </span>
+
+    <div class="agenda-content">
+
+      <span class="agenda-label">
+        ECONOMY
+      </span>
+
+      <h3>
+        Economic Growth & Jobs
+      </h3>
+
+      <p>
+        Policy proposals concerning investment, businesses,
+        productivity, employment and economic growth.
+      </p>
+
+      <a href="#" class="agenda-link">
+        Read policy details →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- 02 -->
+
+  <div class="agenda-item">
+
+    <span class="agenda-number">
+      02
+    </span>
+
+    <div class="agenda-content">
+
+      <span class="agenda-label">
+        AGRICULTURE
+      </span>
+
+      <h3>
+        Food Security & Agriculture
+      </h3>
+
+      <p>
+        Stated programmes concerning agricultural production,
+        food supply, farmer support and food security.
+      </p>
+
+      <a href="#" class="agenda-link">
+        Read policy details →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- 03 -->
+
+  <div class="agenda-item">
+
+    <span class="agenda-number">
+      03
+    </span>
+
+    <div class="agenda-content">
+
+      <span class="agenda-label">
+        INFRASTRUCTURE
+      </span>
+
+      <h3>
+        Infrastructure & Transport
+      </h3>
+
+      <p>
+        Proposed priorities covering transport, roads, housing,
+        electricity and other public infrastructure.
+      </p>
+
+      <a href="#" class="agenda-link">
+        Read policy details →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- 04 -->
+
+  <div class="agenda-item">
+
+    <span class="agenda-number">
+      04
+    </span>
+
+    <div class="agenda-content">
+
+      <span class="agenda-label">
+        HUMAN CAPITAL
+      </span>
+
+      <h3>
+        Education, Skills & Health
+      </h3>
+
+      <p>
+        Stated priorities concerning education, healthcare,
+        skills development and human-capital programmes.
+      </p>
+
+      <a href="#" class="agenda-link">
+        Read policy details →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- 05 -->
+
+  <div class="agenda-item">
+
+    <span class="agenda-number">
+      05
+    </span>
+
+    <div class="agenda-content">
+
+      <span class="agenda-label">
+        SECURITY
+      </span>
+
+      <h3>
+        National Security
+      </h3>
+
+      <p>
+        Stated priorities concerning security institutions,
+        community protection and national security programmes.
+      </p>
+
+      <a href="#" class="agenda-link">
+        Read policy details →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- 06 -->
+
+  <div class="agenda-item">
+
+    <span class="agenda-number">
+      06
+    </span>
+
+    <div class="agenda-content">
+
+      <span class="agenda-label">
+        INVESTMENT
+      </span>
+
+      <h3>
+        Business & Investment
+      </h3>
+
+      <p>
+        Proposed measures concerning private-sector participation,
+        investment, enterprise development and economic opportunity.
+      </p>
+
+      <a href="#" class="agenda-link">
+        Read policy details →
+      </a>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     TIMELINE
+========================= -->
+
+<section class="timeline-section" id="timeline-section">
+
+  <div class="container">
+
+    <div class="section-title">
+
+  <span class="eyebrow">
+    GOVERNMENT TIMELINE
+  </span>
+
+  <h2>
+    Key Milestones
+  </h2>
+
+  <p>
+    A chronological overview of selected government actions,
+    programmes and policy developments.
+  </p>
+
+</div>
+
+
+<div class="timeline">
+
+
+  <!-- MILESTONE 01 -->
+
+  <div class="timeline-item">
+
+    <div class="timeline-date">
+      2023
+    </div>
+
+    <div class="timeline-content">
+
+      <span class="timeline-tag">
+        INAUGURATION
+      </span>
+
+      <h3>
+        Beginning of the Administration
+      </h3>
+
+      <p>
+        The administration began its term following the 2023
+        presidential election and inauguration.
+      </p>
+
+      <a href="#" class="timeline-link">
+        Official source →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- MILESTONE 02 -->
+
+  <div class="timeline-item">
+
+    <div class="timeline-date">
+      2023
+    </div>
+
+    <div class="timeline-content">
+
+      <span class="timeline-tag">
+        ECONOMY
+      </span>
+
+      <h3>
+        Economic Policy Reforms
+      </h3>
+
+      <p>
+        Major economic policy measures were introduced during
+        the administration's first year in office.
+      </p>
+
+      <a href="#" class="timeline-link">
+        Official source →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- MILESTONE 03 -->
+
+  <div class="timeline-item">
+
+    <div class="timeline-date">
+      2024
+    </div>
+
+    <div class="timeline-content">
+
+      <span class="timeline-tag">
+        ENERGY
+      </span>
+
+      <h3>
+        Energy Sector Developments
+      </h3>
+
+      <p>
+        Government programmes and reforms continued across the
+        electricity and petroleum sectors.
+      </p>
+
+      <a href="#" class="timeline-link">
+        Official source →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- MILESTONE 04 -->
+
+  <div class="timeline-item">
+
+    <div class="timeline-date">
+      2024
+    </div>
+
+    <div class="timeline-content">
+
+      <span class="timeline-tag">
+        INFRASTRUCTURE
+      </span>
+
+      <h3>
+        Infrastructure Programmes
+      </h3>
+
+      <p>
+        Selected transport and infrastructure programmes
+        progressed across different parts of the country.
+      </p>
+
+      <a href="#" class="timeline-link">
+        Official source →
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- MILESTONE 05 -->
+
+  <div class="timeline-item">
+
+    <div class="timeline-date">
+      2025
+    </div>
+
+    <div class="timeline-content">
+
+      <span class="timeline-tag">
+        POLICY
+      </span>
+
+      <h3>
+        Continuing Government Programmes
+      </h3>
+
+      <p>
+        Ongoing programmes and policy initiatives continued
+        across economic and social sectors.
+      </p>
+
+      <a href="#" class="timeline-link">
+        Official source →
+      </a>
+
+    </div>
+
+  </div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================
+     DATA / TRANSPARENCY
+========================= -->
+
+<section class="data-section" id="sources">
+
+  <div class="container">
+
+    <div class="section-title">
+
+      <span class="eyebrow">
+        Evidence & Sources
+      </span>
+
+      <h2>
+        Facts, Figures & Sources
+      </h2>
+
+      <p>
+        Every statistic displayed on this website should be linked
+        to its original government, institutional or independent source.
+      </p>
+
+    </div>
+
+
+    <div class="source-grid">
+
+      <div class="source-card">
+        <h3>Economic Data</h3>
+        <p>
+          GDP, inflation, exchange rate, investment and employment data.
+        </p>
+        <a href="#">View source</a>
+      </div>
+
+      <div class="source-card">
+        <h3>Budget & Spending</h3>
+        <p>
+          Federal budget allocations, implementation and public expenditure.
+        </p>
+        <a href="#">View source</a>
+      </div>
+
+      <div class="source-card">
+        <h3>Project Data</h3>
+        <p>
+          Infrastructure and development projects with locations and status.
+        </p>
+        <a href="#">View source</a>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+```
+
+  
+  <!-- VISION -->
+  <section class="vision" id="vision">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Vision & Agenda</h2>
+        <p>Key areas of focus for the campaign</p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <h3>Economic Growth</h3>
+          <p>
+            Policies focused on economic growth,
+            business development and job creation.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Education</h3>
+          <p>
+            Initiatives focused on education,
+            skills development and opportunities for young people.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Security</h3>
+          <p>
+            Information about security,
+            peace and national stability.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CAMPAIGN -->
+  <section class="campaign">
+
+    <div class="container">
+
+      <h2>Renewed Hope</h2>
+
+      <p>
+        Building a stronger and more prosperous Nigeria.
+      </p>
+
+      <br>
+
+      <a href="#volunteer" class="btn">
+        Become a Volunteer
+      </a>
+
+    </div>
+
+  </section>
+
+
+  <!-- NEWS -->
+  <section id="news">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Latest News</h2>
+        <p>Campaign news and updates</p>
+      </div>
+
+      <div class="news-grid">
+
+        <div class="news-card">
+
+          <img src="images/news1.jpg" alt="Campaign News">
+
+          <div class="news-content">
+            <h3>Campaign Update</h3>
+
+            <p>
+              Add campaign news and announcements here.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="news-card">
+
+          <img src="images/news2.jpg" alt="Campaign Event">
+
+          <div class="news-content">
+            <h3>Campaign Events</h3>
+
+            <p>
+              Add information about upcoming campaign events here.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="news-card">
+
+          <img src="images/news3.jpg" alt="Latest News">
+
+          <div class="news-content">
+            <h3>Latest Updates</h3>
+
+            <p>
+              Add the latest campaign updates here.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- VOLUNTEER -->
+  <section class="volunteer" id="volunteer">
+
+    <div class="container">
+
+      <div class="section-title">
+        <h2>Join Us</h2>
+        <p>Become part of the campaign movement</p>
+      </div>
+
+      <form>
+
+        <input
+          type="text"
+          placeholder="Full Name"
+          required
+        >
+
+        <input
+          type="email"
+          placeholder="Email Address"
+          required
+        >
+
+        <input
+          type="tel"
+          placeholder="Phone Number"
+        >
+
+        <select>
+          <option>Choose State</option>
+          <option>Abuja FCT</option>
+          <option>Kano</option>
+          <option>Kaduna</option>
+          <option>Lagos</option>
+          <option>Other</option>
+        </select>
+
+        <textarea placeholder="Message"></textarea>
+
+        <button class="btn" type="submit">
+          Submit
+        </button>
+
+      </form>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>
+      © 2026 Tinubu • Shettima Campaign
+    </p>
+
+    <p>
+      <a href="#">Facebook</a> |
+      <a href="#">X</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">YouTube</a>
+    </p>
+
+  </footer>
+
+
+  <script>
+
+    <"script">
+
+  const menuToggle =
+    document.getElementById("menuToggle");
+
+  const mainNav =
+    document.getElementById("mainNav");
+
+  const navLinks =
+    document.querySelectorAll(".nav-link");
+
+
+  /* OPEN / CLOSE MOBILE MENU */
+
+  menuToggle.addEventListener("click", function () {
+
+    mainNav.classList.toggle("open");
+
+    menuToggle.classList.toggle("open");
+
+    const isOpen =
+      mainNav.classList.contains("open");
+
+    menuToggle.setAttribute(
+      "aria-expanded",
+      isOpen
+    );
+
+  });
+
+
+  /* CLOSE MENU WHEN LINK IS CLICKED */
+
+  navLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+      mainNav.classList.remove("open");
+
+      menuToggle.classList.remove("open");
+
+      menuToggle.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    });
+
+  });
+
+
+  /* ACTIVE NAVIGATION */
+
+  window.addEventListener("scroll", function () {
+
+    const sections =
+      document.querySelectorAll("section[id]");
+
+    let current = "";
+
+    sections.forEach(function (section) {
+
+      const sectionTop =
+        section.offsetTop - 120;
+
+      if (window.scrollY >= sectionTop) {
+        current = section.getAttribute("id");
+      }
+
+    });
+
+
+    navLinks.forEach(function (link) {
+
+      link.classList.remove("active");
+
+      if (
+        link.getAttribute("href") ===
+        "#" + current
+      ) {
+        link.classList.add("active");
+      }
+
+    });
+
+  });
+
+</script>
+    
+
+  </script>
+
+</body>
+</html>
+```
